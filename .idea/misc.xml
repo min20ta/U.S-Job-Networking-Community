@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/hometab/app/src/main/res/drawable/ic_launcher_background.xml" value="0.112" />
+        <entry key="..\:/hometab/app/src/main/res/drawable/search_shape.xml" value="0.1555" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/firstpage.xml" value="0.22" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment2.xml" value="0.3312820512820513" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment3.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/searchmenu.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/searchview.xml" value="0.33" />
+        <entry key="..\:/hometab/app/src/main/res/layout/writing1.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/writing2.xml" value="0.33" />
+        <entry key="..\:/hometab/app/src/main/res/menu/search_menu.xml" value="0.22" />
+        <entry key="..\:/hometab/app/src/main/res/menu/searchmenu.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
