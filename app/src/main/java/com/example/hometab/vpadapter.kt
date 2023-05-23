@@ -4,8 +4,11 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import homefragment.homefragment
+import homefragment.homefragment2
+import homefragment.homefragment3
 
-internal class vpadapter(var context: Context, fm:FragmentManager, var totalTabs:Int) :FragmentPagerAdapter(fm){
+internal class vpadapter(context: Context,fm:FragmentManager, var totalTabs:Int) :FragmentPagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
             return when(position){
                 0->{

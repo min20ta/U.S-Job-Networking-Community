@@ -3,19 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/hometab/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/drawable/ic_launcher_background.xml" value="0.112" />
         <entry key="..\:/hometab/app/src/main/res/drawable/search_shape.xml" value="0.1555" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account1.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account2.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account3.xml" value="0.2515625" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account4.xml" value="0.2515625" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account5.xml" value="0.2515625" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_itshome.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_main2.xml" value="0.2296875" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_write1.xml" value="0.2515625" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_write2.xml" value="0.2515625" />
         <entry key="..\:/hometab/app/src/main/res/layout/firstpage.xml" value="0.22" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_firstpage.xml" value="0.27314814814814814" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_home.xml" value="0.3067708333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_home0.xml" value="0.3067708333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment2.xml" value="0.3312820512820513" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment3.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_login1.xml" value="0.3578125" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount1.xml" value="0.3578125" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount2.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount3.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount4.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount5.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_writing1.xml" value="0.2911458333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_writing2.xml" value="0.3067708333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/home.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/login1.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/mainactivity.xml" value="0.3614583333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/searchmenu.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/layout/searchview.xml" value="0.33" />
         <entry key="..\:/hometab/app/src/main/res/layout/writing1.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/layout/writing2.xml" value="0.33" />
         <entry key="..\:/hometab/app/src/main/res/menu/search_menu.xml" value="0.22" />
         <entry key="..\:/hometab/app/src/main/res/menu/searchmenu.xml" value="0.22" />
+        <entry key="..\:/hometab/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.176" />
+        <entry key="..\:/hometab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
