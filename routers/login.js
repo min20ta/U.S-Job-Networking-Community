@@ -1,9 +1,9 @@
 const express=require('express');
 const router=express.Router();
 const path=require('path');
-const getConnection = require('../routers/pool.js');
+const poolmodule = require('../routers/pool.js');
 const bodyParser = require('body-parser');
-const { createPool } = require("mysql");
+
 
 router.use(express.urlencoded({extended:true})) //url확장가능
 router.use(express.json()) //json형태받기가능
@@ -18,7 +18,7 @@ router.post('/',(req,res)=>{
     const password=body.password;
     
     
-    getConnection((conn)=>{
+    poolmodule.getConnection((conn)=>{
        
         console.log("db연결성공");
     
@@ -35,7 +35,10 @@ router.post('/',(req,res)=>{
             }
             if(rows.length>0){
                 console.log("아이디[%s]와 패쓰워드 일치",id);
-                return;
+                req.session.id=id;
+                req.session.is_logined=true;
+                req.session.save();
+               
             }
             else{
                 console.log('로그인실패');

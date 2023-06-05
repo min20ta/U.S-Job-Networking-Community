@@ -13,6 +13,7 @@ const pool=mysql.createPool({
   
   });
 
+
   function getConnection(callback) {
     pool.getConnection(function (err, conn) {
       if(!err) {
@@ -21,4 +22,4 @@ const pool=mysql.createPool({
     });
   }
   
-  module.exports = getConnection;
+  module.exports = {getConnection,pool};
