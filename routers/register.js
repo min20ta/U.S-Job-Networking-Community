@@ -17,7 +17,7 @@ router.post('/',(req,res)=>{
     const name=body.name;
     const phonenumber=body.phonenumber;
 
-    getConnection((conn)=>{
+   getConnection((conn)=>{
      
         console.log("db연결성공");
     

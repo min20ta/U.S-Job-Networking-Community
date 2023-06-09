@@ -6,10 +6,7 @@ const static=require('serve-static');  //이게 가장위 루트
 const session=require('express-session');
 const mysqlstore = require("express-mysql-session")(session);
 const cookieparser=require('cookie-parser');
-const poolmodule = require('../routers/pool.js');
 const dbconfig=require('../config/dbconfig.json');
-
-
 
 const sessionstore=new mysqlstore({
   connectionLimit:10,
@@ -20,6 +17,17 @@ const sessionstore=new mysqlstore({
   debug:false
 
 });
+
+
+//블록체인
+const Web3=require('web3');
+const web3=new Web3();
+web3.setProvider(new web3.providers.HttpProvider("http://127.0.0.1:8545")); //안되면 로컬호스트로 바꾸기
+const send_account="0x00B828CD483d8B8E3B758f31d2BD91c9fd6bBBE6";
+const receive_account="0x46F0C5AbE5770246EB69b44BBe02E10B5FaF7d71";
+const privateKey=Buffer.from('privateKey','hex');
+const Tx = require('ethereumjs-tx');
+
 
 const app = express();
 //환경설정
@@ -43,13 +51,46 @@ const registerrouter = require('../routers/register');
 const loginrouter = require('../routers/login');
 const mailrouter = require('../routers/mail');
 const homerouter = require('../routers/home');
+const writerouter = require('../routers/write');
 app.use('/register',registerrouter);
 app.use('/login',loginrouter);
 app.use('/mail',mailrouter);
 app.use('/home',homerouter);
+app.use('/write',writerouter);
 
 
 
+
+
+app.get('/main',(req,res)=>{
+  
+  web3.eth.getTransactionCount(send_account, (err, txCount) =>{ //txcount=nonce
+
+    const txObject ={ //nonce,gaslimit,gasprice,to받는계좌,value이더리움값
+      nonce: web3.utils.toHex(txCount),
+      gasLimit: web3.utils.toHex(100000),
+      gasPrice: web3.utils.toHex(web3.utils.toWei('10','gwei')),
+      to: receive_account,
+      value: '0x2386f26fc10000'
+    };
+
+    const tx = new Tx(txObject);
+    tx.sign(privateKey);  //개인키를 이용한 sign
+
+    const serializedTx = tx.serialize();
+    const raw = '0x' + serializedTx.toString('hex');
+
+
+    web3.eth.sendSignedTransaction(raw)  //sign된 트랜잭션을 이더리움으로 보냄. hash,receipt가 리턴됨
+     .once('transactionHash', (hash) => {
+       console.info('transactionHash', 'http://127.0.0.1:8545' + hash);
+     })
+     .once('receipt', (receipt) => {  //사용된 가스량,계산된 가스량,해쉬값..
+       console.info('receipt', receipt);
+    }).on('error', console.error);
+  });
+
+  });
 
 
 

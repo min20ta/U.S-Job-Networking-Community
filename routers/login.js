@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const path=require('path');
-const poolmodule = require('../routers/pool.js');
+const getConnection = require('../routers/pool.js');
 const bodyParser = require('body-parser');
 
 
@@ -18,7 +18,7 @@ router.post('/',(req,res)=>{
     const password=body.password;
     
     
-    poolmodule.getConnection((conn)=>{
+    getConnection((conn)=>{
        
         console.log("db연결성공");
     
@@ -38,6 +38,7 @@ router.post('/',(req,res)=>{
                 req.session.id=id;
                 req.session.is_logined=true;
                 req.session.save();
+                console.log("세션이 생성되었습니다",req.session.id);  //나중에 지우기
                
             }
             else{

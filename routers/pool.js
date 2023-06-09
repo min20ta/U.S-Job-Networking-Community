@@ -22,4 +22,4 @@ const pool=mysql.createPool({
     });
   }
   
-  module.exports = {getConnection,pool};
+  module.exports = getConnection;
