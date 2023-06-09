@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"string","name":"id","type":"string"},{"internalType":"string","name":"datahash","type":"string"}],"name":"set","outputs":[],"stateMutability":"nonpayable","type":"function"}]
