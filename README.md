@@ -6,6 +6,9 @@
 >개발기간 : 2023-6~ 2023-10 (4개월)
 >
 ## Team Members
+[류정현](https://github.com/JungHyun-Ryoo)| [이경수](https://github.com/qwelks) | [김민지](https://github.com/min20ta)
+| :-----: | :-----: | :------: |
+| <img src="https://avatars.githubusercontent.com/u/109725457?v=4" width=400px alt="류정현"/> | <img src="https://avatars.githubusercontent.com/u/134033584?v=4" width=400px alt="이경수"/> | <img src="https://avatars.githubusercontent.com/u/127599615?v=4" width=400px alt="김민지"/> |
 
 ## 기술 스택
 ### front-end
@@ -23,5 +26,16 @@
 <br/>
 <br/>
 <br/>
-<img src="https://github.com/user-attachments/assets/a6963af5-6c1f-45d1-bd53-b951b2403ad6" width="700" height="400"/>
+<img src="https://github.com/user-attachments/assets/a6963af5-6c1f-45d1-bd53-b951b2403ad6" width="650" height="400"/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+## 내가 기여한 부분
+- Android- node.js 통신위한 Retrofit적용
+- Android- ViewModel과 livedata이용 MVVM 모델 적용
+- node.js - express를 사용하여 crud작성
+- node.js - web3를 사용하여 블록체인 스마트컨트랙트작성
+- mysql- crud sql문 작성
 
