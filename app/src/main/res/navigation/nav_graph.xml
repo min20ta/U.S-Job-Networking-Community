@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homefragment3">
+
+    <fragment
+        android:id="@+id/homefragment3"
+        android:name="homefragment.homefragment3"
+        android:label="fragment_homefragment3"
+        tools:layout="@layout/fragment_homefragment3" >
+        <action
+            android:id="@+id/action_homefragment3_to_mywritepage"
+            app:destination="@id/mywritepage" />
+        <action
+            android:id="@+id/action_homefragment3_to_scrappage"
+            app:destination="@id/scrappage" />
+        <action
+            android:id="@+id/action_homefragment3_to_imsipage"
+            app:destination="@id/imsipage" />
+        <action
+            android:id="@+id/action_homefragment3_to_passwordchange1"
+            app:destination="@id/passwordchange1" />
+    </fragment>
+    <fragment
+        android:id="@+id/imsipage"
+        android:name="homefragment.imsipage"
+        android:label="fragment_imsipage"
+        tools:layout="@layout/activity_imsipage" />
+    <fragment
+        android:id="@+id/scrappage"
+        android:name="homefragment.scrappage"
+        android:label="fragment_scrappage"
+        tools:layout="@layout/activity_scrappage" />
+    <fragment
+        android:id="@+id/mywritepage"
+        android:name="homefragment.mywritepage"
+        android:label="fragment_mywritepage"
+        tools:layout="@layout/activity_mywritepage" />
+    <fragment
+        android:id="@+id/passwordchange1"
+        android:name="homefragment.passwordchange"
+        android:label="fragment_passwordchange1"
+        tools:layout="@layout/activity_passwordchange" >
+        <action
+            android:id="@+id/action_passwordchange1_to_passwordchange2"
+            app:destination="@id/passwordchange2" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordchange2"
+        android:name="homefragment.passwordchange2"
+        android:label="fragment_passwordchange2"
+        tools:layout="@layout/activity_passwordchange2" >
+        <action
+            android:id="@+id/action_passwordchange2_to_passwordchange3"
+            app:destination="@id/passwordchange3" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordchange3"
+        android:name="homefragment.passwordchange3"
+        android:label="fragment_passwordchange3"
+        tools:layout="@layout/activity_passwordchange3" />
+</navigation>

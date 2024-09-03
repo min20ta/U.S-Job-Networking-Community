@@ -1,880 +1,745 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/homescroll"
+    tools:context="homefragment.homefragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="SpeakableTextPresentCheck">
+    >
 
     <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="homefragment.homefragment"
-    android:padding="20dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
-
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:background="#E4DAF4">
 
-<!--            과정별-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="과정별\n"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="서류"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginRight="55dp"
-
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="역량검사"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:layout_marginRight="55dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="면접"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:layout_marginRight="55dp"
-                />
-         </LinearLayout>
-            <View
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_centerInParent="true"
-                android:background="#C5DEEA"/>
-
-
-<!--직무별-->
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="직무별"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                />
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="3dp"
+                app:contentPadding="4dp">
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Accountant" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Assistant Manager"
-                    android:layout_marginBottom="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Assistant" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Auditor" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Bookkeeper"
-                    android:layout_marginBottom="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="C.P.A" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Data Entry Manager"
-                    android:layout_marginBottom="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:text="Officer" />
-
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Receptionist" />
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:text="Accounts Payable"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Accounts Receivable" />
-
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:text="Other"
-                    android:layout_marginBottom="5dp"/>
-
-            </LinearLayout>
-            <View
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_centerInParent="true"
-                android:background="#C5DEEA"/>
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="지역별"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Alabama"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Alaska"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Arizona"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Arkansas"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="California"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Colorado"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Connecticut"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Delaware"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Florida"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Georgia"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Hawaii"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Idaho"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Illinois"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView34"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Indiana"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView35"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Iowa"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView36"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Kansas"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView37"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Kentucky"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView38"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Louisiana"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView39"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Maine"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView40"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Maryland"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Massachusetts"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Michigan"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Minnesota"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView44"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Mississippi"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView46"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Missouri"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView45"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Montana"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView47"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Nebraska"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView48"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Nevada"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView49"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="New Hampshire"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView50"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="New Jersey"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView51"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="New Mexico"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView52"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="New York"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView53"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="North Carolina"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-
-                <TextView
-                    android:id="@+id/textView54"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="North Dakota"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView55"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ohio"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView56"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Oklahoma"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView57"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Oregon"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView58"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Pennsylvania"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView59"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Rhode Island"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView60"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="South Carolina"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView62"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="South Dakota"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView61"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Tennessee"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView64"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Texas"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView63"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Utah"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView66"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Vermont"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView65"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Virginia"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView67"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Washington"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView68"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="West Virginia"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView70"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Wisconsin"
-                    android:textSize="18sp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textView69"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Wyoming"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginBottom="5dp"/>
-            </LinearLayout>
-
-
-        </LinearLayout>
-        </FrameLayout>
-    </ScrollView>
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/helpicon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="1178dp"
+                        android:src="@drawable/helpicon"
+                        android:tooltipText="도움말"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="-123dp">
+
+                        <!--            과정별-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="@font/linebold"
+                            android:text="과정별\n"
+                            android:textColor="#E40E0C0C"
+                            android:textSize="27dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category1_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="40dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• 서류"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category1_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="25dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• 역량검사"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category1_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• 면접"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="30dp"
+                            android:background="#19606063" />
+
+
+                        <!--직무별-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="30dp"
+                            android:fontFamily="@font/linebold"
+                            android:text="직무별"
+                            android:textColor="@color/black"
+                            android:textSize="27dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category2_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Sales"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category2_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Admin/Office"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category2_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Accounting"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category2_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Insurance"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category2_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Customer Support"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category2_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Clothing"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category2_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="9dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Computer"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category2_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Creative/Design"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/category2_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Logistics/Transport"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category2_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Marketing"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category2_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Manufacture"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/category2_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Other"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="30dp"
+                            android:background="#19606063" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="30dp"
+                            android:fontFamily="@font/linebold"
+                            android:text="지역별"
+                            android:textColor="@color/black"
+                            android:textSize="27dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginRight="30dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• California"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• NewJersey"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="42dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• NewYork"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Georgia"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="77dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Texas"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Michigan"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="70dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Illinois"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Washinton"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="52dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Virginia"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Maryland"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Pennsylvania"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Florida"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="90dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Ohio"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Tennssee"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="55dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Arizona"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Alabama"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="55dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Nevada"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Wisconsin"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="35dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Delaware"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/category3_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Colorado"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/category3_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:fontFamily="@font/lineregular"
+                                android:text="• Massachusetts"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+

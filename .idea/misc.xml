@@ -1,41 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/hometab/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/drawable/category_pressed.xml" value="0.1185" />
         <entry key="..\:/hometab/app/src/main/res/drawable/ic_launcher_background.xml" value="0.112" />
+        <entry key="..\:/hometab/app/src/main/res/drawable/round.xml" value="0.1155" />
         <entry key="..\:/hometab/app/src/main/res/drawable/search_shape.xml" value="0.1555" />
-        <entry key="..\:/hometab/app/src/main/res/layout/activity_account1.xml" value="0.1" />
-        <entry key="..\:/hometab/app/src/main/res/layout/activity_account2.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account1.xml" value="0.33" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account2.xml" value="0.33" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account2_5.xml" value="0.34739583333333335" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_account2_6.xml" value="0.26875" />
         <entry key="..\:/hometab/app/src/main/res/layout/activity_account3.xml" value="0.2515625" />
         <entry key="..\:/hometab/app/src/main/res/layout/activity_account4.xml" value="0.2515625" />
         <entry key="..\:/hometab/app/src/main/res/layout/activity_account5.xml" value="0.2515625" />
-        <entry key="..\:/hometab/app/src/main/res/layout/activity_itshome.xml" value="0.1" />
-        <entry key="..\:/hometab/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_homefragment1_rv.xml" value="0.264" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_homefragment2detail.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_homefragment3_hiddenpage_rv.xml" value="0.4" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_homefragment3_mypage_rv.xml" value="0.4" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_imsipage.xml" value="0.23802083333333332" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_itshome.xml" value="0.22" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/hometab/app/src/main/res/layout/activity_main2.xml" value="0.2296875" />
-        <entry key="..\:/hometab/app/src/main/res/layout/activity_write1.xml" value="0.2515625" />
-        <entry key="..\:/hometab/app/src/main/res/layout/activity_write2.xml" value="0.2515625" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_mywritepage.xml" value="0.26875" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_passwordchange.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_passwordchange1.xml" value="0.32447916666666665" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_passwordchange2.xml" value="0.24947916666666667" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_passwordchange3.xml" value="0.26875" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_scrappage.xml" value="0.26875" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_write1.xml" value="0.2574074074074074" />
+        <entry key="..\:/hometab/app/src/main/res/layout/activity_write2.xml" value="0.20619888075764098" />
+        <entry key="..\:/hometab/app/src/main/res/layout/buyhiddenpage_dialog.xml" value="0.4" />
         <entry key="..\:/hometab/app/src/main/res/layout/firstpage.xml" value="0.22" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_firstpage.xml" value="0.27314814814814814" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_home.xml" value="0.3067708333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_home0.xml" value="0.3067708333333333" />
-        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment.xml" value="0.1" />
-        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment2.xml" value="0.3312820512820513" />
-        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment3.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment.xml" value="0.24947916666666667" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment2.xml" value="0.4" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment2detail.xml" value="0.25" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_homefragment3.xml" value="0.2" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_imsipage.xml" value="0.2890625" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_login1.xml" value="0.3578125" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount1.xml" value="0.3578125" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount2.xml" value="0.3614583333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount3.xml" value="0.3614583333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount4.xml" value="0.3614583333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_makeaccount5.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_mywritepage.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_nowritepage.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_passwordchange1.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_passwordchange2.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_passwordchange3.xml" value="0.32447916666666665" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_passwordchange4.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/fragment_scrappage.xml" value="0.3458333333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_writing1.xml" value="0.2911458333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/fragment_writing2.xml" value="0.3067708333333333" />
         <entry key="..\:/hometab/app/src/main/res/layout/home.xml" value="0.3614583333333333" />
-        <entry key="..\:/hometab/app/src/main/res/layout/login1.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/homefragment2_detail.xml" value="0.1" />
+        <entry key="..\:/hometab/app/src/main/res/layout/item_write.xml" value="0.4" />
+        <entry key="..\:/hometab/app/src/main/res/layout/item_write_hidden.xml" value="0.264" />
+        <entry key="..\:/hometab/app/src/main/res/layout/item_write_mywrites.xml" value="0.4" />
+        <entry key="..\:/hometab/app/src/main/res/layout/list_write.xml" value="0.31979166666666664" />
+        <entry key="..\:/hometab/app/src/main/res/layout/login1.xml" value="0.264" />
         <entry key="..\:/hometab/app/src/main/res/layout/mainactivity.xml" value="0.3614583333333333" />
+        <entry key="..\:/hometab/app/src/main/res/layout/nav_graph.xml" value="0.346875" />
+        <entry key="..\:/hometab/app/src/main/res/layout/round.xml" value="0.16354166666666667" />
         <entry key="..\:/hometab/app/src/main/res/layout/searchmenu.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/layout/searchview.xml" value="0.33" />
+        <entry key="..\:/hometab/app/src/main/res/layout/write.xml" value="0.3328125" />
         <entry key="..\:/hometab/app/src/main/res/layout/writing1.xml" value="0.1" />
         <entry key="..\:/hometab/app/src/main/res/layout/writing2.xml" value="0.33" />
         <entry key="..\:/hometab/app/src/main/res/menu/search_menu.xml" value="0.22" />
@@ -45,7 +77,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

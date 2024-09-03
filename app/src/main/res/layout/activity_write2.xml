@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homescroll"
+    tools:context="writeactivity.write2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <!--    tools:ignore="SpeakableTextPresentCheck"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+                <!--            과정별-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="과정별\n"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/linebold"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/rg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="서류"
+                        android:clickable="true"
+                        android:id="@+id/category1_1"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="25dp"
+
+                        />
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="역량검사"
+                        android:id="@+id/category1_2"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_marginRight="25dp"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="면접"
+                        android:id="@+id/category1_3"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="20sp"
+
+                        />
+                    </RadioGroup>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="#19606063"/>
+
+
+                <!--직무별-->
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="직무별"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/linebold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <RadioGroup
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    -->
+                    <RadioButton
+                        android:id="@+id/category2_1"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:text="Sales" />
+
+                    <RadioButton
+                        android:id="@+id/category2_2"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Admin/Office"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_marginBottom="5dp"/>
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
+
+                    <RadioButton
+                        android:id="@+id/category2_3"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Accounting" />
+
+                    <RadioButton
+                        android:id="@+id/category2_4"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:text="Insurance" />
+
+                    <RadioButton
+                        android:id="@+id/category2_5"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="CustomerSupport"
+                        android:layout_marginBottom="5dp"/>
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
+
+                    <RadioButton
+                        android:id="@+id/category2_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:text="Clothing"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/category2_7"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:text="Computer"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/category2_8"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="Creative/Design" />
+
+                    <RadioButton
+                        android:id="@+id/category2_9"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Logistics/Transport" />
+
+                    <RadioButton
+                        android:id="@+id/category2_10"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:text="Marketing"
+                        android:layout_marginBottom="5dp"/>
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
+
+                    <RadioButton
+                        android:id="@+id/category2_11"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:text="Manufacture" />
+
+                    <RadioButton
+                        android:id="@+id/category2_12"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Other"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_marginBottom="5dp"/>
+
+<!--                </LinearLayout>-->
+                    </RadioGroup>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="#19606063"/>
+
+                <TextView
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="지역별"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/linebold"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/rg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/category3_1"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="California"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_2"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="New Jersey"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/category3_3"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="New York"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gerogia"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+
+                    <RadioButton
+                        android:id="@+id/category3_5"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Texas"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Michigan"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/category3_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Illinois"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Washinton"
+                        android:textSize="18sp"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+
+                    <RadioButton
+                        android:id="@+id/category3_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Virginia"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Maryland"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pennsylvania"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Florida"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:clickable="true"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ohio"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tennessee"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Arizona"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:text="Alabama"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/category3_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:text="Nevada"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Massachusetts"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/category3_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:text="Delaware"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+                    <RadioButton
+                        android:id="@+id/category3_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Colorado"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/category3_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wisconsin"
+                        android:clickable="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lineregular"
+                        android:textSize="18sp"
+                        android:textAlignment="center"/>
+
+
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/categorysavebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:background="#19606063"
+                    android:text="완료"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lineregular"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+

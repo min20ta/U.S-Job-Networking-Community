@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="writeactivity.write1">
+
+
+        <TextView
+            android:id="@+id/writing1_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과정/직무/지역 >"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lineregular"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="#77606063"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/yourcontent"
+            android:layout_width="358dp"
+            android:layout_height="230dp"
+            android:background="@null"
+            android:fontFamily="@font/lineregular"
+            android:hint="내용을 입력하세요\n\n\n허위, 욕설, 근거 없는 비방, 저작권 침해 등이\n\n포함된 글은 관리자가 경고문구를 추가하거나\n\n법적 제제를 받을 수 있습니다."
+            android:textColor="#40000000"
+            android:inputType="textMultiLine"
+            android:maxLines="50"
+            android:autoLink="web"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="X"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.959"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savebtn"
+            android:layout_width="97dp"
+            android:layout_height="52dp"
+            android:background="#19606063"
+            android:fontFamily="@font/lineregular"
+            android:text="완료"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.851" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
