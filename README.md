@@ -14,12 +14,12 @@
 [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1725375000168?alt=media&token=be866dec-3149-4219-a79b-4e3d0c383dff)](https://github.com/msdio/stackticon)
 
 ## 기능 소개
-<img src="https://github.com/user-attachments/assets/186a7195-1930-40b7-af7f-872d162cce1b" width="700" height="400"/>
+<img src="https://github.com/user-attachments/assets/186a7195-1930-40b7-af7f-872d162cce1b" width="750" height="400"/>
 <br/>
 <br/>
 <br/>
 
-<img src="https://github.com/user-attachments/assets/d5deef2c-1543-4cc0-a2e4-29ad81b404ba" width="700" height="400"/>
+<img src="https://github.com/user-attachments/assets/d5deef2c-1543-4cc0-a2e4-29ad81b404ba" width="750" height="400"/>
 <br/>
 <br/>
 <br/>
