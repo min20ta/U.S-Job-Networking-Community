@@ -8,7 +8,7 @@
 ## Team Members
 [류정현](https://github.com/JungHyun-Ryoo)| [이경수](https://github.com/qwelks) | [김민지](https://github.com/min20ta)
 | :-----: | :-----: | :------: |
-| <img src="https://avatars.githubusercontent.com/u/109725457?v=4" width=400px alt="류정현"/> | <img src="https://avatars.githubusercontent.com/u/134033584?v=4" width=400px alt="이경수"/> | <img src="https://avatars.githubusercontent.com/u/127599615?v=4" width=400px alt="김민지"/> |
+| <img src="https://avatars.githubusercontent.com/u/109725457?v=4" width=200px alt="류정현"/> | <img src="https://avatars.githubusercontent.com/u/134033584?v=4" width=200px alt="이경수"/> | <img src="https://avatars.githubusercontent.com/u/127599615?v=4" width=200px alt="김민지"/> |
 
 ## 기술 스택
 ### front-end
