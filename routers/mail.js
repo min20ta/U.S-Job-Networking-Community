@@ -40,13 +40,17 @@ router.post('/',(req,res)=>{
             console.log("이메일발송오류");
             console.dir(err);
         }else{ 
-            console.log("이메일발송성공")
-            res.json({mailnumber:number})}
+            console.log("이메일발송성공")  //안드로이드 터미널에 나옴
+            console.log(number);
+            }
+           
 
 
         });
 
-    
+        res.send(number.toString());
+
+        //현직자디비에...
     
 
 });

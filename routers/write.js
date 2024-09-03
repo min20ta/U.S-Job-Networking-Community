@@ -1,5 +1,6 @@
 const express=require('express');
 const router=express.Router();
+const mysql=require('mysql');
 const getConnection = require('../routers/pool.js');
 const crypto = require('crypto');
 const BigNumber = require('bignumber.js'); 
@@ -25,9 +26,8 @@ router.post('/', (req, res) => {
     const category1=body.category1;
     const category2=body.category2;
     const category3=body.category3;
-    const jobstatus=body.jobstatus;
     const content=body.content;
-    const savestatus=body.savestatus;
+    
 
     const contenthash=crypto.pbkdf2Sync(content,crypto.randomBytes(2).toString('hex'), 1, 2, 'sha512').toString('hex').toString();
     let blockhash;
@@ -51,9 +51,21 @@ router.post('/', (req, res) => {
                     blockhash=receipt.transactionHash.toString();
                     console.log("blockhash: "+ blockhash);
                     clearInterval(waiting);
+                    
+               
 
-                    conn.query('insert into writeboard(id,category1,category2,category3,jobstatus,content,savestatus,blockhash)values(?,?,?,?,?,?,?,?)',[id,category1,category2,category3,jobstatus,content,savestatus,blockhash],
-                    (err,result)=>{
+                        const sql1='insert into writeboard(id,category1,category2,category3,jobstatus,content,blockhash,hidden)values(?,?,?,?,(select jobstatus from users where id=?),?,?,"no");';
+                        const sql1content=[id,category1,category2,category3,id,content,blockhash];
+                        const formatsql1=mysql.format(sql1,sql1content);
+
+
+                        const sql2='update users set coin=coin+500 where id=?;';
+                        const sql2content=[id];
+                        const formatsql2=mysql.format(sql2,sql2content);
+
+
+                        conn.query(formatsql1+formatsql2,
+                        (err,result)=>{   //쿼리코드- insert에 서브쿼리쓸때
 
                         conn.release();
             

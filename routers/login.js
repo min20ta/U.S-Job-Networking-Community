@@ -11,6 +11,34 @@ router.use(express.json()) //json형태받기가능
 
 
 
+//로그인유지(쿠키,세션이용)
+const session=require('express-session');
+const mysqlstore = require("express-mysql-session")(session);
+const cookieparser=require('cookie-parser');
+const dbconfig=require('../config/dbconfig.json');
+
+const sessionstore=new mysqlstore({
+  connectionLimit:20,   //최대커넥션수
+  host: dbconfig.host,
+  user: dbconfig.user,
+  password:dbconfig.password,
+  database:dbconfig.database,
+  debug:false
+
+});
+
+router.use(cookieparser());  //?
+router.use( // 세션
+  session({
+    secret: "my key",
+    resave: false,
+    saveUninitialized: true,
+    store:sessionstore,
+  })
+);
+
+
+
 
 router.post('/',(req,res)=>{
     const body=req.body;
@@ -35,10 +63,10 @@ router.post('/',(req,res)=>{
             }
             if(rows.length>0){
                 console.log("아이디[%s]와 패쓰워드 일치",id);
-                req.session.id=id;
+                req.session.name=id;
                 req.session.is_logined=true;
                 req.session.save();
-                console.log("세션이 생성되었습니다",req.session.id);  //나중에 지우기
+                console.log("세션이 생성되었습니다",req.session);  //나중에 지우기
                
             }
             else{

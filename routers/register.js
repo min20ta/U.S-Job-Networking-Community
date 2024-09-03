@@ -22,8 +22,8 @@ router.post('/',(req,res)=>{
         console.log("db연결성공");
     
 
-        conn.query('insert into users(id,password,name,phonenumber)values(?,?,?,?)',
-        [id,password,name,phonenumber],
+        conn.query('insert into users(id,name,password,phonenumber,jobstatus,coin)values(?,?,?,?,"현직자",0)',
+        [id,name,password,phonenumber],
         (err,result)=>{
 
             conn.release();
@@ -34,6 +34,7 @@ router.post('/',(req,res)=>{
             }
             if(result){
                 console.log('회원가입성공');
+                
                 
             }
             else{

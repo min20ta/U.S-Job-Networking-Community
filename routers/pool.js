@@ -4,12 +4,13 @@ const dbconfig=require('../config/dbconfig.json');
 
 
 const pool=mysql.createPool({
-    connectionLimit:10,
+    connectionLimit:20,
     host: dbconfig.host,
     user: dbconfig.user,
     password:dbconfig.password,
     database:dbconfig.database,
-    debug:false
+    debug:false,
+    multipleStatements: true   
   
   });
 
