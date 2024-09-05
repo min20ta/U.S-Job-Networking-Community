@@ -12,7 +12,7 @@ interface MyApi {
 
     //최신글게시판-전체데이터가져오기
     @GET("home2")
-   suspend fun gethome2():ArrayList<rvhome2>  //앞함수=서버로보내는거 : 뒤는 서버에서 다시 받는 방식
+   suspend fun gethome2():ArrayList<rvhome2>  
 
     //카테고리누르면 해당게시판으로
     @GET("home/category/{category}")
