@@ -1,15 +1,19 @@
 # U.S-Job-Networking-Community
 미국 취업 정보교류를 위한 커뮤니티 앱
+<br/>
 
+## 프로젝트 소개
 >미국 취업 정보를 공유하기 위한 커뮤니티를 조성하고, 블록체인을 이용하여 게시글 삭제로 인한 정보 손실을 최소화하여 한인 커뮤니티 내에 장기적인 정보 축적이 이루어질 수 있도록 한다
 
 >개발기간 : 2023-6~ 2023-10 (4개월)
 >
+
 ## Team Members
 [류정현](https://github.com/JungHyun-Ryoo)| [이경수](https://github.com/qwelks) | [김민지](https://github.com/min20ta)
 | :-----: | :-----: | :------: |
 | <img src="https://avatars.githubusercontent.com/u/109725457?v=4" width=200px alt="류정현"/> | <img src="https://avatars.githubusercontent.com/u/134033584?v=4" width=200px alt="이경수"/> | <img src="https://avatars.githubusercontent.com/u/127599615?v=4" width=200px alt="김민지"/> |
 
+  
 ## 기술 스택
 ### front-end
 [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1725374901355?alt=media&token=130724f5-9236-42ed-b894-bbbc44721cad)](https://github.com/msdio/stackticon)
