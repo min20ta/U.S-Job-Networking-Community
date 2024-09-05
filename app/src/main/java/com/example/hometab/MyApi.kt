@@ -14,7 +14,6 @@ interface MyApi {
     @GET("home2")
    suspend fun gethome2():ArrayList<rvhome2>  //앞함수=서버로보내는거 : 뒤는 서버에서 다시 받는 방식
 
-
     //카테고리누르면 해당게시판으로
     @GET("home/category/{category}")
     suspend fun gethomecategory1(
@@ -30,7 +29,6 @@ interface MyApi {
     suspend fun gethomecategory3(
         @Path("category") category: String
     ): List<rvhome2>
-
 
     //글쓰기저장버튼누르면 서버로 정보넘기기
     @POST("write")
@@ -52,20 +50,15 @@ interface MyApi {
         @Part("id") id: RequestBody
     ): Call<String>
 
-
     //로그인
     @POST("login")
     suspend fun postlogin(@Body body: login)
-
-
-
 
     //마이페이지-내포인트보여주기
     @GET("mypage/{id}")
     suspend fun getmypagecoin(
         @Path("id") id: String
     ):String
-
 
     //마이페이지-내글보여주기
     @GET("mywrites/{id}")
@@ -96,6 +89,5 @@ interface MyApi {
     suspend fun postchangepassword(
         @Body body: login
     )
-
 
 }
