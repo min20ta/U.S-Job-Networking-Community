@@ -9,7 +9,6 @@ const addr="0x6b5e53ab52ce28ada5f7852a650c60262618b510";
 const chainboard=web3.eth.contract(abi).at(addr);
 const crypto = require('crypto');
 
-// const contenthash=crypto.pbkdf2Sync("itsdata",crypto.randomBytes(2).toString('hex'), 1, 2, 'sha512').toString('hex');
 let blockhash="0";
 
   
