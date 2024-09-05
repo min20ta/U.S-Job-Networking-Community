@@ -18,12 +18,12 @@ class home2ViewModel : ViewModel() {
 
 
 
-    private var _boardlist = MutableLiveData<ArrayList<rvhome2>>()  //여기서만쓸수있게 감쳐둠
+    private var _boardlist = MutableLiveData<ArrayList<rvhome2>>()  //여기서만쓸수있게
     val boardlist: LiveData<ArrayList<rvhome2>>  //외부에서 쓸수있게 만든것
     get() = _boardlist
 
-    private var _filteredlist = MutableLiveData<ArrayList<rvhome2>>()  //여기서만쓸수있게 감쳐둠
-    val filteredlist: LiveData<ArrayList<rvhome2>>  //외부에서 쓸수있게 만든것
+    private var _filteredlist = MutableLiveData<ArrayList<rvhome2>>()  
+    val filteredlist: LiveData<ArrayList<rvhome2>>  
         get() = _filteredlist
 
     var copylist=arrayListOf<rvhome2>()
@@ -50,7 +50,7 @@ class home2ViewModel : ViewModel() {
     var startdate:String="2020-12-12"
     var enddate:String="2020-12-12"
 
-    //밖에서는 맘대로 못바꾸고 함수를 통해서만 가능한건가
+   
     fun givestartvalue(date : String){
         startdate = date
         Log.d("viewdate",startdate)
@@ -68,7 +68,7 @@ class home2ViewModel : ViewModel() {
             var fordate_startdate =format.parse(startdate)
             var fordate_enddate =format.parse(enddate)
 
-            Log.d("substr",it.write_date.substring(0, 10)) //자르는건잘됨 ㅇㅋ.
+            Log.d("substr",it.write_date.substring(0, 10)) 
             (format.parse(it.write_date.substring(0, 10)).after(fordate_startdate)
                     && format.parse(it.write_date.substring(0, 10)).before(fordate_enddate))
 
@@ -83,15 +83,6 @@ class home2ViewModel : ViewModel() {
     fun getItem(item:rvhome2) = viewModelScope.launch {
         _addeditem.value = item
     }
-//    var check=0
-//    fun plus(){check++}
-//    fun minus(){check--}
-
-
-
-
-
-
 
 
     //카테고리클릭시
