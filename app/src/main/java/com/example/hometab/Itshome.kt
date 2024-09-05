@@ -73,45 +73,4 @@ class itshome : AppCompatActivity() {
 
         })
 
-
-
-
-
-
-
-
-
-
-
-
-
-//        viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
-//
-//        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-//            override fun onTabSelected(tab: TabLayout.Tab?) {
-//
-//                viewPager.currentItem = tab!!.position
-//
-//
-//            }
-//
-//
-//            override fun onTabUnselected(tab: TabLayout.Tab?) {}
-//
-//            override fun onTabReselected(tab: TabLayout.Tab?) {}
-//
-//
-//        })
-//
-
-    }
-//
-//    override fun onRestart() {
-//        super.onRestart()
-//        homefragment2().refreshAdapter()
-//
-//    }
-
-
-
 }
