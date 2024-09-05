@@ -15,9 +15,6 @@ class home2ViewModel : ViewModel() {
 
     private val retrofitInstance = RetrofitInstance.getInstance().create(MyApi::class.java)
 
-
-
-
     private var _boardlist = MutableLiveData<ArrayList<rvhome2>>()  //여기서만쓸수있게
     val boardlist: LiveData<ArrayList<rvhome2>>  //외부에서 쓸수있게 만든것
     get() = _boardlist
@@ -91,7 +88,6 @@ class home2ViewModel : ViewModel() {
         get() = _categoryclicked
 
 
-
     fun getCategoryPost(category: String, categorynum:String) = viewModelScope.launch {
         if (categorynum == "1") {
             var category1post = retrofitInstance.gethomecategory1(category)
@@ -100,16 +96,12 @@ class home2ViewModel : ViewModel() {
         } else if (categorynum == "2") {
             var category2post = retrofitInstance.gethomecategory2(category)
             _categoryclicked.value = category2post
-
+            
         } else if (categorynum == "3") {
             var category3post = retrofitInstance.gethomecategory3(category)
             _categoryclicked.value = category3post
-
         }
     }
-
-
-
 
 
     //회원가입
@@ -120,7 +112,6 @@ class home2ViewModel : ViewModel() {
 
     fun PostRegister(info: person) = viewModelScope.launch {
         retrofitInstance.postregister(info)
-
     }
 
     //이메일전송
@@ -140,13 +131,9 @@ class home2ViewModel : ViewModel() {
 
     }
 
-
-
-
     //글작성->서버
 
     fun PostWrtie(info: writecontent) = viewModelScope.launch {
-
         retrofitInstance.postwrite(info)
     }
 
@@ -167,7 +154,6 @@ class home2ViewModel : ViewModel() {
     //내정보_내글_숨기기버튼클릭정보 서버로
     fun PostMypageMyWritesHidden(id: String, info: writecontent) = viewModelScope.launch {
         var mypage_mywrites_hiddenpost = retrofitInstance.postmyhiddenwrites(id, info)
-
     }
 
 
@@ -178,9 +164,7 @@ class home2ViewModel : ViewModel() {
         get() = _coin
 
     fun GetMypageCoin(id: String)= viewModelScope.launch {
-
         _coin.value=retrofitInstance.getmypagecoin(id)
-
     }
 
 
@@ -195,22 +179,17 @@ class home2ViewModel : ViewModel() {
     fun gethiddenpage() = viewModelScope.launch {
         var hiddenpagewrites = retrofitInstance.getmyhiddenpage()
         _hiddenpage.value = hiddenpagewrites
-
     }
-
-
 
 
       //구입정보보내기
     fun PostBoughtHiddenpage(id: String, info: writecontent) = viewModelScope.launch {
             retrofitInstance.postboughthiddenpage(id, info)
-
     }
 
     //비밀번호변경
     fun PostChangePassword(info:login) = viewModelScope.launch {
         retrofitInstance.postchangepassword(info)
-
     }
 
 
