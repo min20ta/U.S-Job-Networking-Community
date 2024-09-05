@@ -2,7 +2,7 @@
 //블록체인
 const Web3=require('web3');
 const web3=new Web3();
-web3.setProvider(new web3.providers.HttpProvider("http://127.0.0.1:8545")); //안되면 로컬호스트로 바꾸기
+web3.setProvider(new web3.providers.HttpProvider("http://127.0.0.1:8545")); 
 const account=web3.eth.accounts[0];
 const abi=[{"inputs":[{"internalType":"string","name":"id","type":"string"},{"internalType":"int8","name":"datahash","type":"int8"}],"name":"set","outputs":[],"stateMutability":"nonpayable","type":"function"}];
 const addr="0x6b5e53ab52ce28ada5f7852a650c60262618b510";
