@@ -38,7 +38,7 @@
 
 ## 내가 기여한 부분
 - Android- [ViewModel과 livedata이용한 MVVM 모델 적용](https://github.com/min20ta/U.S-Job-Networking-Community/wiki/MVVM-%ED%8C%A8%ED%84%B4-(Model,-View,-ViewModel)-%EC%A0%81%EC%9A%A9)
-- Android- [node.js 통신위한 Retrofit적용]([https://github.com/min20ta/U.S-Job-Networking-Community.wiki.git](https://github.com/min20ta/U.S-Job-Networking-Community/wiki/node.js-%ED%86%B5%EC%8B%A0%EC%9C%84%ED%95%9C-Retrofit%EC%A0%81%EC%9A%A9))
+- Android- [node.js 통신위한 Retrofit적용]((https://github.com/min20ta/U.S-Job-Networking-Community/wiki/node.js-%ED%86%B5%EC%8B%A0%EC%9C%84%ED%95%9C-Retrofit%EC%A0%81%EC%9A%A9))
 - node.js - express를 사용하여 crud작성
 - node.js - web3를 사용하여 블록체인 스마트컨트랙트작성
 - mysql- crud sql문 작성
