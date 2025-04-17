@@ -14,9 +14,9 @@ object RetrofitInstance{
 
         var builder = OkHttpClient().newBuilder()
         var okHttpClient = builder
-                .connectTimeout(1000, TimeUnit.SECONDS)   //소켓타임아웃방지
-                .readTimeout(1000,TimeUnit.SECONDS)
-                .writeTimeout(1000, TimeUnit.SECONDS)
+                .connectTimeout(10, TimeUnit.SECONDS)   //소켓타임아웃방지
+                .readTimeout(10,TimeUnit.SECONDS)
+                .writeTimeout(10, TimeUnit.SECONDS)
                 .followRedirects(false)
                 .build()
         
